@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tarjar-pdf
+    env: docker
+    plan: free
+    autoDeploy: true
+    branch: main
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
